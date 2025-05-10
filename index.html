@@ -2,117 +2,172 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>João | Portfólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev MetaBoost</title>
 </head>
 
 <body>
-    <div class="particulas"></div>
+  <header class="header">
+    <section>
+      <a href="#">
+        <img src="./img/logo.png" alt="logo" width="80">
+      </a>
 
-    <nav class="navegacao">
-        <ul class="menu">
-            <li>
-                <a href="#inicio" class="menu-link">Início</a>
-            </li>
-            <li>
-                <a href="#sobre" class="menu-link">Sobre</a>
-            </li>
-            <li>
-                <a href="#projetos" class="menu-link">Projetos</a>
-            </li>
-            <li>
-                <a href="#contatos" class="menu-link">Contato</a>
-            </li>
-        </ul>
-    </nav>
 
-    <main id="inicio" class="cabecalho">
-        <img src="./img/joao.png" alt="Foto do João Luiz" class="foto-perfil">
-        <h1>João Mendes</h1>
-        <p class="cabecalho-sub-titulo">Desenvolvedor Front-End</p>
-    </main>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#about">Sobre</a>
+        <a href="#menu">Menu</a>
+        <a href="#review">Avaliações</a>
+      </nav>
 
-    <section id="sobre" class="titulo">
-        <h2 class="sobre-titulo">Sobre Mim</h2>
-        <div class="sobre-caixa">
-            <p class="sobre-paragrafo">
-                Olá! Meu nome é João Mendes, sou um desenvolvedor front-end apaixonado por criar interfaces de usuário
-                incríveis e funcionais. Tenho experiência em HTML, CSS e JavaScript, e estou sempre aprendendo novas
-                tecnologias para aprimorar minhas habilidades.
-            </p>
+      <div class="icons">
+        <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/search--v1.png" alt="search--v1" />
+        <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/shopping-cart--v1.png"
+          alt="shopping-cart--v1" />
+      </div>
+    </section>
+  </header>
+
+  <div class="home-container">
+    <section id="#">
+      <div class="content">
+        <h3>CODE COM O COM OS MELHORES SUPLEMENTOS PARA GAMERS</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta recusandae atque laborum doloribus dolorem
+          iure. Ut itaque deleniti, sint nisi veniam ab tempora pariatur totam quisquam odit ipsum nesciunt aliquam.</p>
+        <a href="#menu" class="btn">Pegue o seu agora</a>
+      </div>
+    </section>
+  </div>
+
+  <section class="about" id="about">
+    <h2 class="title">Sobre <span>Nós</span></h2>
+    <div class="row">
+      <div>
+        <img src="./img/foto1.png" alt="Sobre Nós">
+      </div>
+      <div class="content">
+        <h3>O Que Faz Nossos Suplementos</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate corporis eligendi architecto in iusto
+          itaque minima harum veniam, voluptatibus labore vitae deserunt libero temporibus possimus velit. Ab fugiat
+          obcaecati aspernatur!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto a at officiis tempore quia provident
+          eligendi accusamus consectetur repellat ad nam magnam porro quaerat, est exercitationem mollitia neque dicta
+          odio!</p>
+        <a href="#" class="btn">Saiba Mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <h2 class="title">Nossos <span>Produtos</span></h2>
+
+    <div class="box-container">
+      <div class="box">
+        <img src="./img/produto1.png" alt="item-1" width="180">
+        <h3>Roxx Energy PRO (315g)</h3>
+        <div class="price">R$ 99,99 <span>R$ 114,68</span></div>
+        <a href="#" class="btn">Adicione ao Carrinho</a>
+      </div>
+      <div class="box">
+        <img src="./img/produto1.png" alt="item-2" width="180">
+        <h3>Roxx Energy PRO (315g)</h3>
+        <div class="price">R$ 99,99 <span>R$ 114,68</span></div>
+        <a href="#" class="btn">Adicione ao Carrinho</a>
+      </div>
+      <div class="box">
+        <img src="./img/produto1.png" alt="item-3" width="180">
+        <h3>Roxx Energy PRO (315g)</h3>
+        <div class="price">R$ 99,99 <span>R$ 114,68</span></div>
+        <a href="#" class="btn">Adicione ao Carrinho</a>
+      </div>
+      <div class="box">
+        <img src="./img/produto1.png" alt="item-4" width="180">
+        <h3>Roxx Energy PRO (315g)</h3>
+        <div class="price">R$ 99,99 <span>R$ 114,68</span></div>
+        <a href="#" class="btn">Adicione ao Carrinho</a>
+      </div>
+      <div class="box">
+        <img src="./img/produto1.png" alt="item-5" width="180">
+        <h3>Roxx Energy PRO (315g)</h3>
+        <div class="price">R$ 99,99 <span>R$ 114,68</span></div>
+        <a href="#" class="btn">Adicione ao Carrinho</a>
+      </div>
+      <div class="box">
+        <img src="./img/produto1.png" alt="item-6" width="180">
+        <h3>Roxx Energy PRO (315g)</h3>
+        <div class="price">R$ 99,99 <span>R$ 114,68</span></div>
+        <a href="#" class="btn">Adicione ao Carrinho</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="review" id="review">
+    <h2 class="title">Nossos <span>Clientes</span></h2>
+
+    <div class="box-container">
+      <div class="box">
+        <img src="./img/quote-img.png" alt="comentario">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia aliquid suscipit quos! Molestiae corporis asperiores aliquam? Maiores sint est labore illo nulla deserunt odit voluptas rem deleniti? Culpa, eius adipisci!</p>
+        <img src="./img/pic-1.png" alt="foto-cliente" class="user">
+        <h3>João Luiz</h3>
+        <div class="stars">
+          <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
+          <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
+          <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
+          <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
+          <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star-half-empty.png" alt="star-half-empty"/>
         </div>
-    </section>
-
-    <section id="projetos" class="titulo">
-        <h2 class="projetos-titulo">Meus Projetos</h2>
-        <div class="projetos-caixa">
-            <div class="projetos-card">
-                <a href="https://joaomendss.github.io/MetaBoost/" target="_blank"><img src="./img/projeto1.png" alt="Projeto 1" class="projetos-imagem"></a>
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">MetaBoost</h3>
-                    <p class="paragrafo-projetos">Loja de suplementos para gamer, interface inicial do projeto MetaBoost
-                    </p>
-                </div>
-
-            </div>
-            <div class="projetos-card">
-                <a href="https://joaomendss.github.io/FootFlex/index.html" target="_blank"><img src="./img/projeto2.png" alt="Projeto 2" class="projetos-imagem"></a>
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">FootFlex</h3>
-                    <p class="paragrafo-projetos">Loja de vendas de tenis de corrida da Nike</p>
-                </div>
-
-            </div>
-            <div class="projetos-card">
-                <a href="https://joaomendss.github.io/Convertor-de-reais/" target="_blank"><img src="./img/projeto3.png" alt="Projeto 3" class="projetos-imagem"></a>
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">Convertor de Dólar</h3>
-                    <p class="paragrafo-projetos">Site para converter o Real para Dólar</p>
-                </div>
-
-            </div>
+      </div>
+      <div class="box">
+        <img src="./img/quote-img.png" alt="comentario">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia aliquid suscipit quos! Molestiae corporis asperiores aliquam? Maiores sint est labore illo nulla deserunt odit voluptas rem deleniti? Culpa, eius adipisci!</p>
+        <img src="./img/pic-3.png" alt="foto-cliente" class="user">
+        <h3>Pedro Luiz</h3>
+        <div class="stars">
+          <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
+          <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
+          <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
+          <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
+          <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star-half-empty.png" alt="star-half-empty"/>
         </div>
-    </section>
+      </div>
+      <div class="box">
+        <img src="./img/quote-img.png" alt="comentario">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia aliquid suscipit quos! Molestiae corporis asperiores aliquam? Maiores sint est labore illo nulla deserunt odit voluptas rem deleniti? Culpa, eius adipisci!</p>
+        <img src="./img/pic-2.png" alt="foto-cliente" class="user">
+        <h3>Livia Piemontez Brum</h3>
+        <div class="stars">
+          <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
+          <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
+          <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
+          <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star--v1.png" alt="star--v1"/>
+          <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/star-half-empty.png" alt="star-half-empty"/>
+        </div>
+      </div>
+        
+    </div>
+  </section>
 
-    <section id="contatos" class="titulo">
-        <h2 class="contatos-titulo">Entre em Contato</h2>
+  <section class="address" id="address">
+    <h2 class="title">Nosso <span>Endereço</span></h2>
 
-        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
-            <div class="grupo-form">
-                <input placeholder="Nome" class="campo-form" id="nome">
-            </div>
-            <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Sua Mensagem" rows="6" id="mensagem"></textarea>
-            </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115250.70908998973!2d-49.26214769410907!3d-25.485540782986412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce574791731b9%3A0x3b36d3286a381f42!2sNinja%20Suplementos!5e0!3m2!1spt-BR!2sbr!4v1745720148832!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
 
-            <button type="submit" class="botao-form">Enviar WhatsApp</button>
-        </form>
-
-        </h2>
-
-    </section>
-
-    <script>
-        function enviarWhats(event) {
-            event.preventDefault()
-
-
-            const nome = document.getElementById('nome').value;
-            const mensagem = document.getElementById('mensagem').value;
-            const telefone = '5542998682358'
-
-            const texto = `Olá! Me chamo ${nome}, ${mensagem}`
-            const msgFormatada = encodeURIComponent(texto)
-
-            const url = `https://wa.me/${telefone}?text=${msgFormatada}`
-
-            console.log(url)
-
-            window.open(url, '_blank')
-        }
-    </script>
+  <section class="footer">
+    <div class="share">
+      <a href="https://www.instagram.com/joaoluiiz._/" target="_blank"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" alt="instagram-new"/></a>
+      <a href="https://wa.me/5542998682358" target="_blank"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/whatsapp.png" alt="whatsapp"/></a>
+      <a href="https://www.linkedin.com/in/joaolcmendes/" target="_blank"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png" alt="linkedin"/></a>
+    </div>
+  </section>
 </body>
 
 </html>
