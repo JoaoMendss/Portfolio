@@ -1,4 +1,4 @@
-
+/* Remove margens e paddings padrão, aplica box-sizing para facilitar o controle de tamanhos e define a fonte padrão */
 * {
     margin: 0;
     padding: 0;
@@ -6,48 +6,55 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Habilita rolagem suave para âncoras */
 html {
     scroll-behavior: smooth;
 }
 
+/* Variáveis CSS para cores usadas no site */
 :root {
-    --primaria: #4f46e5;
-    --secundaria: #7c3aed;
-    --escuro: #0f172a;
-    --maisEscuro: #0a0f1c;
-    --claro: #e2e9f0;
-    --vidro: rgba(255, 255, 255, 0.1);
+    --primaria: #4f46e5;       /* Roxo principal */
+    --secundaria: #7c3aed;     /* Roxo secundário */
+    --escuro: #0f172a;         /* Azul muito escuro para fundo */
+    --maisEscuro: #0a0f1c;     /* Azul ainda mais escuro */
+    --claro: #e2e9f0;          /* Cor clara para textos */
+    --vidro: rgba(255, 255, 255, 0.1); /* Transparência para efeito vidro */
 }
 
+/* Define fundo escuro para a página e cor clara para textos */
 body {
     background-color: var(--escuro);
     color: var(--claro);
 }
 
+/* Estiliza a barra de navegação fixa no topo com fundo translúcido */
 .navegacao {
     position: fixed;
     top: 0;
-    background:rgba(15, 23, 42, 0.8);
+    background: rgba(15, 23, 42, 0.8);
     width: 100%;
-    z-index: 100;
+    z-index: 100; /* Para ficar acima dos outros elementos */
     padding: 1.5rem;
 }
 
+/* Menu da navegação: lista flexível, horizontal, espaçada e centralizada */
 .menu {
     display: flex;
-    list-style: none;
-    gap: 3rem;
+    list-style: none;  /* Remove marcadores */
+    gap: 3rem;         /* Espaçamento entre itens */
     justify-content: center;
 }
 
+/* Links do menu com estilo básico */
 .menu-link {
-    text-decoration: none;
+    text-decoration: none;    /* Remove sublinhado */
     color: var(--claro);
     font-weight: 500;
-    position: relative;
+    position: relative;       /* Para o efeito de linha animada */
     padding: 0.5rem 0;
 }
 
+/* Linha animada que aparece ao passar o mouse */
 .menu-link::after {
     content: '';
     height: 2px;
@@ -59,10 +66,12 @@ body {
     transition: width 0.5s ease;
 }
 
+/* Ao passar o mouse, a linha se expande até a largura total do link */
 .menu-link:hover::after {
     width: 100%;
 }
 
+/* Cabeçalho principal com altura mínima de 100vh e alinhamento centralizado vertical e horizontalmente */
 .cabecalho {
     min-height: 100vh;
     display: flex;
@@ -71,16 +80,18 @@ body {
     flex-direction: column;
 }
 
+/* Foto de perfil com tamanho fixo, bordas arredondadas, sombra e efeito de animação */
 .foto-perfil {
     width: 350px;
     height: 350px;
     box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
-    border-radius: 50%;
+    border-radius: 50%; /* Deixa a imagem redonda */
     border: 4px solid var(--vidro);
-    object-fit: cover; /* Isso vai cortar a imagem se necessário, mantendo a proporção */
-    animation: flutuar 5s ease-in-out infinite;
+    object-fit: cover; /* Corta a imagem para caber mantendo proporção */
+    animation: flutuar 5s ease-in-out infinite; /* Animação de flutuação */
 }
 
+/* Título principal com fonte grande e cor roxa */
 h1 {
     font-size: 3.5rem;
     color: var(--primaria);
@@ -88,91 +99,154 @@ h1 {
     margin: 20px;
 }
 
+/* Subtítulo com tamanho menor e cor clara */
 .cabecalho-sub-titulo {
     font-size: 1.5rem;
     color: var(--claro);
 }
 
+/* Espaçamento geral para seções com título */
 .titulo {
     padding: 6rem 2rem;
 }
 
+/* Título da seção “Sobre Mim” centralizado e com cor clara */
 .sobre-titulo {
     font-size: 3rem;
     color: var(--claro);
     text-align: center;
     margin-bottom: 20px;
 }
+
+/* Caixa que envolve o texto do “Sobre Mim” com efeito vidro */
 .sobre-caixa {
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
     border-radius: 16px;
     border: 1px solid var(--vidro);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); /* Desfoque de fundo para efeito vidro */
     background: rgba(255, 255, 255, 0.05);
 }
 
+/* Parágrafo do “Sobre Mim” centralizado e com fonte maior */
 .sobre-paragrafo {
     text-align: center;
     font-size: 1.2rem;
 }
 
+/* Caixa que contém os cards dos projetos em grid responsivo */
 .projetos-caixa {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas flexíveis */
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Card individual do projeto com fundo translúcido, borda arredondada e efeito vidro */
 .projetos-card {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
     backdrop-filter: blur(5px);
     border: 1px solid var(--vidro);
     overflow: hidden;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease; /* Transição suave */
     cursor: pointer;
 }
 
+/* Título da seção “Meus Projetos” centralizado */
 .projetos-titulo {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
 }
 
+/* Efeito hover para destacar o card com sombra e leve aumento */
 .projetos-card:hover {
     box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
     transform: translateY(-10px) scale(1.03);
 }
 
+/* Imagem do projeto ocupa toda largura e tem altura fixa, cortando se necessário */
 .projetos-imagem {
     height: 200px;
     width: 100%;
     object-fit: cover;
 }
 
+/* Caixa para textos dentro do card */
 .caixa-textos-projeto {
     padding: 1.5rem;
 }
 
+/* Parágrafo do projeto com cor clara e espaçamento entre linhas */
 .paragrafo-projetos {
     color: rgba(226, 232, 240, 0.8);
     line-height: 1.25rem;
-
 }
 
+/* Título do projeto com margem inferior para separar do texto */
 .info-projetos {
     margin-bottom: 5px;
 }
 
+.redes-sociais-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.redes-caixa {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px); /* Desfoque de fundo para efeito vidro */
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.redes-sociais-caixa {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Novo container vertical para cada rede social */
+.rede-social {
+    display: flex;
+    flex-direction: column; /* Ícone em cima, texto embaixo */
+    align-items: center;
+}
+
+/* Já tinha no seu CSS */
+.link-rede {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+/* Título da seção “Contato” centralizado */
 .contatos-titulo {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
 }
 
+/* Formulário de contato centralizado, com fundo translúcido e bordas arredondadas */
 .formulario-contato {
     max-width: 600px;
     margin: 0 auto;
@@ -183,6 +257,7 @@ h1 {
     border-radius: 16px;
 }
 
+/* Campos do formulário com largura total, padding, fundo translúcido e bordas arredondadas */
 .campo-form {
     width: 100%;
     padding: 1rem;
@@ -190,18 +265,21 @@ h1 {
     border-radius: 8px;
     color: var(--claro);
     border: 1px solid var(--vidro);
-    outline: none;
+    outline: none; /* Remove outline padrão */
 }
 
+/* Estilo para foco nos campos, destacando a borda e sombra */
 .campo-form:focus {
     border-color: var(--primaria);
     box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
 }
 
+/* Espaçamento entre grupos de campos do formulário */
 .grupo-form {
     margin-bottom: 1.5rem;
 }
 
+/* Botão do formulário com cor clara, fundo em degradê, bordas arredondadas e cursor pointer */
 .botao-form {
     color: var(--claro);
     background: linear-gradient(45deg, var(--primaria), var(--secundaria));
@@ -210,32 +288,34 @@ h1 {
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
-    width: 100%;
+    width: 100%; /* Botão ocupa toda a largura */
     transition: all 0.5s ease;
 }
 
+/* Efeito hover no botão, com leve elevação e sombra */
 .botao-form:hover {
     transform: translateY(-4px);
     box-shadow: 0 5px rgba(79, 70, 229, 0.4);
 }
 
+/* Fundo com partículas coloridas posicionadas fixas com opacidade reduzida */
 .particulas {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -1; /* Atrás do conteúdo */
     opacity: 0.5;
     background: radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%),
-    radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%) var(--maisEscuro);;
+                radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%) var(--maisEscuro);
 }
 
+/* Animação chamada “flutuar” usada na foto de perfil para movimento vertical suave */
 @keyframes flutuar {
     0%, 100% {
         transform: translateY(0);
     }
-
     50% {
         transform: translateY(-20px);
     }
